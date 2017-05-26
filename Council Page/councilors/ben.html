@@ -19,6 +19,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+  <script>
+
+			$(document).ready(function(){
+			$("#Whois").hide();
+			    $("#clickbutton").click(function(){
+ 		     	   $("#Whois").toggle("slow");
+	   			});
+	  		})
+
+		</script>
+
   <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  -->
   <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
   <!--[if lt IE 9]->
@@ -73,8 +84,8 @@
     <br />
     Insert Photo!!
     <br />
-    <h2> Who is Ben? </h2>
-    <div>
+    <h2 id="clickbutton"> Who is Ben? </h2>
+    <div id="Whois">
       <p>Ben Newlands became a councilor in Bearsden Council in the 2017 election.</p>
     </div>
   </div>
