@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+  <meta charset="utf-8">
+  <title>Bootstrap Buttons</title>
+
+  <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
+  <!-- sets the width of the page to be the same screen-width of the device being used -->
+  <!-- and sets the initial zoom level when the page is first loaded -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+  <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  --> 
+  <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
+  <!--[if lt IE 9]->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> 
+    </script>
+  <![endif]--></head>
+<body>
+<div class="container">
+  <h1>Bootstrap Buttons</h1>
+	<p>Bootstrap provides an easy way to get a range of buttons with diiferent styles.</p>
+	<p>&nbsp;</p>
+	<p>
+	  <button type="button" class="btn btn-default">Default</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-link">Link</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+	</p>
+	<p>&nbsp;</p>
+	<p>Below is the code for the default  button style - </p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;</code></p>
+	<p>&nbsp;</p>
+	<div class="panel panel-default"  style="width:90%; margin:auto;">
+  <div class="panel-heading" style="background-color:#0099cc;">
+	  <h3>Button Styles </h3>
+  </div>
+  <div class="panel-body" style="background-color:#fffff9;">
+	<p>The  default style 
+	  <button type="button" class="btn btn-default">button</button>  
+	  can be changed using the class codes below.</p>
+	<p>Just add the style class that you want to the button class to change the size of your button -</p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn <strong>btn-default</strong>&quot;&gt;OK&lt;/button&gt;</code></p>
+	<p>&nbsp;</p>
+	<p>Roll the mouse over the buttons and you will see them react to the mouse hover. </p>
+	<p>&nbsp;</p>
+	<table width="98%" border="0">
+    <tr style="font-weight:bold;">
+      <td height="33" class="bg-info">Class</td>
+      <td class="bg-info">Button</td>
+      <td class="bg-info">Code</td>
+    </tr>
+    <tr>
+      <td height="49"><code>.btn-default</code></td>
+      <td><button type="button" class="btn btn-default">Default</button></td>
+      <td>&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt; Default&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td width="18%" height="49"><code>.btn-danger</code></td>
+      <td width="15%"><button type="button" class="btn btn-danger">Danger</button></td>
+      <td width="67%">&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt; Danger&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td height="45"><code>.btn-info</code></td>
+      <td><button type="button" class="btn btn-info">Info</button></td>
+      <td>&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt; Info&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td height="47"><code>.btn-link</code></td>
+      <td><button type="button" class="btn btn-link">Link</button></td>
+      <td>&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt; Link&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td height="47"><code>.btn-primary</code></td>
+      <td><button type="button" class="btn btn-primary">Primary</button></td>
+      <td>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt; Primary&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td height="48"><code>.btn-success</code></td>
+      <td><button type="button" class="btn btn-success">Success</button></td>
+      <td>&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt; Success&lt;/button&gt;</td>
+    </tr>
+    <tr>
+      <td><code>.btn-warning</code></td>
+      <td><button type="button" class="btn btn-warning">Warning</button></td>
+      <td>&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt; Warning&lt;/button&gt;</td>
+    </tr>
+  </table>
+	<p>&nbsp;</p>
+  </div>
+</div>
+	<p>&nbsp;</p>
+	<div class="panel panel-default"  style="width:90%; margin:auto;">
+  <div class="panel-heading" style="background-color:#0099cc;">
+	<h2>Button Size</h2>
+	</div>
+  <div class="panel-body" style="background-color:#fffff9;">	
+	<p>There are four classes for setting the size of Bootstrap's buttons - large, medium, small and extra small. &nbsp;</p>
+	<p>Just add the size class  to the style class to change the size of your button -</p>
+	<p> <code>&lt;button type=&quot;button&quot; class=&quot;btn btn-info <strong>btn-lg</strong>&quot;&gt;Info&lt;/button&gt;</code></p>
+	<p>&nbsp;  </p>
+	<p>Large - <code>.btn-lg</code>&nbsp;creates a Large button
+	  <button type="button" class="btn btn-info btn-lg">Info</button>
+	</p>
+	<p>&nbsp;</p>
+	<p>Medium - <code>.btn-md</code>&nbsp;creates a Medium button 
+	  <button type="button" class="btn btn-info btn-md">Info</button>
+	</p>
+	<p>&nbsp;</p>
+	<p>Small - <code>.btn-sm</code>&nbsp;creates a Small button 
+	  <button type="button" class="btn btn-info btn-sm">Info</button>
+	</p>
+	<p>&nbsp;</p>
+	<p>Extra Small - <code>.btn-xs</code>&nbsp;creates a Extra Small button 
+	  <button type="button" class="btn btn-info btn-xs">Info</button>
+	</p>
+	<p>&nbsp;</p>
+	</div>
+	</div>
+	<p>&nbsp;</p>
+	<div class="panel panel-default"  style="width:90%; margin:auto;">
+  <div class="panel-heading" style="background-color:#0099cc;">
+	<h2>Block Level Button</h2>
+	</div>
+  <div class="panel-body" style="background-color:#fffff9;">	
+	<p>A block level button expands it's width to fill the parent object. </p>
+	<p>Just add the block class  to the style class to change it to a block level button </p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-info <strong>btn-block</strong>&quot;&gt;Block Button&lt;/button&gt;</code></p>
+	<p>&nbsp;</p>
+	<p><button type="button" class="btn btn-info btn-block">Block Button</button></p>
+	<p>&nbsp;</p>
+	<p>You can add the button size class as well</p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-info <strong>btn-block btn-lg</strong>&quot;&gt;Block Button&lt;/button&gt;</code></p>
+  <p>&nbsp;</p>
+  <p>
+    <button type="button" class="btn btn-info btn-block btn-lg">Large Block Button</button>
+  </p>
+  <p>&nbsp;</p>
+  </div>
+	</div>
+	<p>&nbsp;</p>
+	<div class="panel panel-default"  style="width:90%; margin:auto;">
+  <div class="panel-heading" style="background-color:#0099cc;">
+	<h2>Button States </h2>
+	</div>
+  <div class="panel-body" style="background-color:#fffff9;">	
+	<p>Buttons can have three states - normal, active and disabled. </p>
+	<p>Normal is the default. The class <code>.active</code> makes a button look as though pressed, and the  <code>.disabled</code> class makes a button unclickable. </p>
+	<p> just add active or disabled to the class to make a button active or disabled. </p>
+	<p>&nbsp;</p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Normal Button&lt;/button&gt;</code></p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-info <strong>active</strong>&quot;&gt;Active Button&lt;/button&gt;</code></p>
+	<p><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-info <strong>disabled</strong>&quot;&gt;Disabled Button&lt;/button&gt;</code></p>
+  <p>&nbsp;</p>
+  <p>
+    <button type="button" class="btn btn-info">Normal </button>
+		<button type="button" class="btn btn-info active">Active </button>
+		<button type="button" class="btn btn-info disabled">Disabled </button>
+  </p>
+  <p>&nbsp;</p>
+  </div>
+	</div>
+	<p>&nbsp;</p>
+<div class="panel panel-default"  style="width:90%; margin:auto;">
+  <div class="panel-heading" style="background-color:#0099cc;">
+	<h2>Button Classes for Hyperlinks and Form Buttons </h2>
+	</div>
+  <div class="panel-body" style="background-color:#fffff9;">	
+	<p>Button classes can also be used on the &lt;a&gt; and &lt;input&gt; elements to help format hyperlinks and form buttons. </p>
+	<p>&nbsp;</p>
+	<p>Hyperlink example -  <code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Refresh&lt;/a&gt;</code> - <a href="#" class="btn btn-primary" role="button">Refresh</a></p>
+	<p>Input example&nbsp; - <code>&lt;input type=&quot;submit&quot; class=&quot;btn btn-info&quot; value=&quot;Submit&quot;&gt;</code> - 
+	  <input type="submit" class="btn btn-info" value="Submit"></p>
+	<p>&nbsp;</p>
+	Note - the # character used in the <code>href=&quot;#&quot;</code> acts like an address to a Web page for this demonstration. It has the effect of refreshing the page.</div>
+	</div>	
+	<p>&nbsp;</p>
+</div>
+</div>
+</body>
+</html>

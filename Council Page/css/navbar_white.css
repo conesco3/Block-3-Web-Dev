@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+img {
+  border:0px;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+h1 {
+  color:#000;
+  font-size:20px;
+}
+/* remove the rounded corners on the navbar*/
+.navbar {
+  border-top: 0px;
+  border-bottom-width: medium;
+  border-style: block;
+  border-color: #000
+}
+/* change the background colour of the navbar from black */
+.navbar-inverse {
+  background-color:white;
+  border-color: transparent;
+}
+/* the web site title on the navbar*/
+.navbar-inverse .navbar-brand {
+  color:#000;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.navbar-brand > active > a,
+.navbar-brand > active > a,
+.navbar-brand > active > a {
+  color: #000;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #B4B4B4;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color:#332D2D;
+}
+/* change the colour of the top-level menu items when clicked */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #000;
+  background-color:#332D2D;
+}
+/*-----------------------------------*/
+
+.navbar-inverse .navbar-text {
+  color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #000;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color:#332D2D;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #000;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}

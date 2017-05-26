@@ -1,0 +1,91 @@
+  <!doctype html>
+  <html lang="en">
+  
+  <head>
+  
+      <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+    <meta charset="utf-8">
+    <title>The Solar System - Neptune</title>
+      
+    <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
+    <!-- sets the width of the page to be the same screen-width of the device being used -->
+    <!-- and sets the initial zoom level when the page is first loaded -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="planets_black.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+    <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  --> 
+    <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
+    <!--[if lt IE 9]->
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> 
+      </script>
+    <![endif]-->
+      
+  
+    
+  </head>
+  
+  <body  onLoad="getLocation()">
+  <nav role="navigation" class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">The Solar System</a>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>      
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Inner Planets<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Outer Planets<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="jupiter.html">Jupter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="neptune.html">Neptune</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+          </ul>
+        </li>
+        <li><a href="sun.html">The Sun</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+  <div class="row" >
+    <div class="col-sm-6">
+      <h1>Neptune </h1>
+      <p>Neptune is the eighth and farthest planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest by mass. Among the gaseous planets in the Solar System, Neptune is the most dense. Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the mass of Earth but not as dense. Neptune orbits the Sun at an average distance of 30.1 astronomical units. Named after the Roman god of the sea, its astronomical symbol is ?, a stylised version of the god Neptune's trident. <br>
+      </p>
+      <p>Neptune was the first planet found by mathematical prediction rather than by empirical observation. Unexpected changes in the orbit of Uranus led Alexis Bouvard to deduce that its orbit was subject to gravitational perturbation by an unknown planet. Neptune was subsequently observed on 23 September 1846 by Johann Galle within a degree of the position predicted by Urbain Le Verrier, and its largest moon, Triton, was discovered shortly thereafter, though none of the planet's remaining 13 moons were located telescopically until the 20th century. Neptune has been visited by one spacecraft, Voyager 2, which flew by the planet on 25 August 1989. <br>
+      </p>
+    </div>
+    
+    <div class="col-sm-6">
+		<p><img class="img-responsive img-rounded imh" src="images/neptune.png" alt="The planet Neptune"/></p>
+    </div>
+  </div>
+</div>
+  
+  
+</body>
+  
+</html>
+  

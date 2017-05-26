@@ -1,0 +1,4 @@
+<div class="row" >
+  <div class="col-sm-6">Place text here</div>
+  <div class="col-sm-6">Place image here</div>
+</div>

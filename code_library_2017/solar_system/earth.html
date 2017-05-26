@@ -1,0 +1,147 @@
+  <!doctype html>
+  <html lang="en">
+  
+  <head>
+  
+      <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+    <meta charset="utf-8">
+    <title>The Solar System - Earth</title>
+      
+    <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
+    <!-- sets the width of the page to be the same screen-width of the device being used -->
+    <!-- and sets the initial zoom level when the page is first loaded -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="planets_black.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+    <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  --> 
+    <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
+    <!--[if lt IE 9]->
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> 
+      </script>
+    <![endif]-->
+      
+  
+    
+  </head>
+  
+  <body  onLoad="getLocation()">
+  <nav role="navigation" class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">The Solar System</a>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>      
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Inner Planets<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Outer Planets<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="jupiter.html">Jupter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="neptune.html">Neptune</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+          </ul>
+        </li>
+        <li><a href="sun.html">The Sun</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+  <div class="row" >
+    <div class="col-sm-6">
+      <h1>Earth</h1>
+      
+      <p>Earth is the only planet known to harbor life, and the “home” of human beings. From space Earth resembles a big blue marble with swirling white clouds floating above blue oceans. About 71 percent of Earth’s surface is covered by water, which is essential to life. The rest is land, mostly in the form of continents that rise above the oceans. </p>
+      
+      <p>For thousands of years, human beings could only wonder about Earth and the other observable planets in the solar system. Many early ideas—for example, that the Earth was a sphere and that it traveled around the Sun—were based on brilliant reasoning. However, it was only with the development of the scientific method and scientific instruments, especially in the 18th and 19th centuries, that humans began to gather data that could be used to verify theories about Earth and the rest of the solar system. By studying fossils found in rock layers, for example, scientists realized that the Earth was much older than previously believed. </p>
+      
+      <p>As a result of this recent space exploration, we now know that Earth is one of the most geologically active of all the planets and moons in the solar system. Earth is constantly changing. Over long periods of time land is built up and worn away, oceans are formed and re-formed, and continents move around, break up, and merge. <br>
+      </p>
+</div>
+    
+    <div class="col-sm-6">
+		<p><img class="img-responsive img-rounded imh" src="images/earth.png" alt="The planet earth"/></p>
+        
+        <div style="border:1px solid rgba(27,113,247,1.00); width:98%">
+      <p style="color:rgba(27,113,247,1.00);font-weight:bold;font-size:18px; text-align:center;">You are here on planet Earth</p>
+      <div id="mapholder"  class="img-thumbnail img-responsive"></div>
+      <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+      <script>
+       var x = document.getElementById("demo");
+      function getLocation() {
+       if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+       } else { 
+       x.innerHTML = "Geolocation is not supported by this browser.";1
+       }
+      }
+
+  function showPosition(position) {
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
+    latlon = new google.maps.LatLng(lat, lon)
+    mapholder = document.getElementById('mapholder')
+    mapholder.style.height = '300px';
+    mapholder.style.width = '600px';
+
+    var myOptions = {
+    center:latlon,zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+  }
+    
+  var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+  var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+  }
+
+  function showError(error) {
+    switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+    }
+   }
+</script>
+    </div>
+     </div>
+  </div>
+</div>
+  
+  
+</body>
+  
+</html>
+  

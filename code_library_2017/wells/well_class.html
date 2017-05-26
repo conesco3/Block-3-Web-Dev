@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+  <meta charset="utf-8">
+  <title>Bootstrap Well</title>
+
+  <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
+  <!-- sets the width of the page to be the same screen-width of the device being used -->
+  <!-- and sets the initial zoom level when the page is first loaded -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+  <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  --> 
+  <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
+  <!--[if lt IE 9]->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> 
+    </script>
+  <![endif]-->
+	
+</head>
+<body>
+
+
+<h1>Bootstrap Well</h1>
+<p>The <code>.well</code> class creates a box type element with padding, rounded corners and a grey background. All you need is a <code>&lt;div class=&quot;well&quot;&gt;</code> to create a well that stretches across the entire screen. </p>
+<p>&nbsp;</p>
+
+<div class="well">
+  <p>Basic Well</p>
+</div>
+<p>&nbsp;</p>
+
+<p>The well below has been placed inside a <code>.container</code> class layer.</p>
+<p>&nbsp;</p>
+
+<div class="container">
+  <div class="well">
+    <p>Basic Well in a container class</p>
+  </div>
+  <p>&nbsp;</p>
+</div>
+
+<h2>Well Size</h2>
+<p>You can change the size of the well by using the <code>.well-sm</code> class for small wells or  <code>.well-lg</code> class for large wells</p>
+<p>&nbsp;</p>
+<div class="container">
+  <div class="well well-sm">Small Well</div>
+  <div class="well">Normal (basic) Well</div>
+  <div class="well well-lg">Large Well</div>
+</div>
+
+<h2>Well Colour</h2>
+<p>You can change the background colour of the well by  altering the boootstrap css using your css file. Add this code <code>.well {background-color:#FF7519;}</code> to your CSS or code it as inline css in the &lt;div&gt;.</p>
+<p>&nbsp;</p>
+<div class="container">
+  <div class="well" style="background-color:#FF7519;">Normal Well with an orange background</div>
+</div>
+
+<p>&nbsp;</p>
+
+<div class="container">
+  <div class="well well-sm" >
+<h3>All entries for the .well class in bootstrap.css - </h3>
+</div>
+<div class="container">
+  <div class="well" style="background-color:#fff;">
+<p style="background-color:#f9f2f4; color:#c7254e">&nbsp; .well {<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+min-height: 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding: 19px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+margin-bottom: 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+background-color: #f5f5f5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+border: 1px solid #e3e3e3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-radius: 4px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);<br>
+&nbsp;&nbsp;
+}<br>
+</p>
+<p>&nbsp;</p>
+<p style="background-color:#f9f2f4; color:#c7254e" >
+&nbsp;&nbsp;
+.well blockquote {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-color: #ddd;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-color: rgba(0, 0, 0, .15);<br>
+&nbsp;&nbsp;
+}<br>
+</p>
+<p>&nbsp;</p>
+<p style="background-color:#f9f2f4; color:#c7254e" >
+&nbsp;&nbsp;
+.well-lg {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding: 24px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+border-radius: 6px;<br>
+&nbsp;&nbsp;
+}<br>
+</p>
+<p>&nbsp;</p>
+<p style="background-color:#f9f2f4; color:#c7254e" >
+&nbsp;&nbsp;
+.well-sm {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+padding: 9px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 3px;<br>
+&nbsp; } </p>
+</div>
+</body>
+</html>

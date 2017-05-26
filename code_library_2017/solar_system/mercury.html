@@ -1,0 +1,97 @@
+  <!doctype html>
+  <html lang="en">
+  
+  <head>
+  
+      <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+    <meta charset="utf-8">
+    <title>The Solar System - Mercury</title>
+      
+    <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
+    <!-- sets the width of the page to be the same screen-width of the device being used -->
+    <!-- and sets the initial zoom level when the page is first loaded -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="planets_black.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+    <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  --> 
+    <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
+    <!--[if lt IE 9]->
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> 
+      </script>
+    <![endif]-->
+      
+  
+    
+  </head>
+  
+  <body  onLoad="getLocation()">
+  <nav role="navigation" class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">The Solar System</a>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>      
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Inner Planets<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Outer Planets<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="jupiter.html">Jupter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="neptune.html">Neptune</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+          </ul>
+        </li>
+        <li><a href="sun.html">The Sun</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+  <div class="row" >
+    <div class="col-sm-6">
+      <h1>Mercury </h1>
+      <p>Mercury orbits closest to the Sun of all the planets, at an average distance of approximately 58 million km (about 36 million mi). The planet’s diameter is 4,879 km (3,032 mi), and its volume and mass are about one-eighteenth that of Earth. <br>
+      </p>
+      <p>Mercury’s mean density is approximately equal to that of Earth and is higher than that of any of the other planets. The force of gravity on the planet's surface is about one-third of that on Earth's surface or about twice the surface gravity on the Moon. <br>
+      </p>
+	  <p>Mercury revolves once about the Sun every 88 days. Radar observations of the planet show that it rotates only once every 58.7 days, two-thirds of its period of revolution. Only three of the planet’s days, therefore, occur during every two of its years. The side facing the Sun gets very hot, while the side facing away quickly cools to frigid temperatures.
+      </p>
+      <p>The point in Mercury's orbit at which the planet is closest to the Sun (called the planet’s perihelion) moves a tiny amount every orbit, too much to be accounted for by the gravitational influence of other planets. The observation of these changes in Mercury's perihelion was one of the first confirmations of Einstein’s theory of relativity, which predicted their existence.
+      </p>
+      <p>Mercury’s high density indicates that the relatively dense and abundant element iron accounts for a large proportion of the planet’s composition. The surface of Mercury, however, contains little iron, suggesting that most of Mercury’s iron is now concentrated in a large iron core. Collisions with other protoplanets early in the history of the solar system may have stripped away much of Mercury’s low-density crust, leaving behind a dense, iron-rich core.
+      </p>
+    </div>
+    
+    <div class="col-sm-6">
+		<p><img class="img-responsive img-rounded imh" src="images/mercury.png" alt="The planet Mercury"/></p>
+    </div>
+  </div>
+</div>
+  
+  
+</body>
+  
+</html>
+  
