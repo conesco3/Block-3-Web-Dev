@@ -5,7 +5,7 @@
 
   <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
   <meta charset="utf-8">
-  <title>Bearsden Council - Councilors - Benjimun Newlands</title>
+  <title>Bearsden Council - Tourism - Places to Eat</title>
 
   <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
   <!-- sets the width of the page to be the same screen-width of the device being used -->
@@ -15,20 +15,8 @@
   <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/mainstyle.css">
-  <link rel="stylesheet" href="../css/navbar_white.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <script>
-
-			$(document).ready(function(){
-			$("#Whois").hide();
-			    $("#clickbutton").click(function(){
- 		     	   $("#Whois").toggle("slow");
-	   			});
-	  		})
-
-		</script>
 
   <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  -->
   <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
@@ -44,19 +32,25 @@
     <div class="navbar-inverse container-fluid">
       <!-- title/left/top -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="../index.html">Bearsden Council</a>
+        <a class="navbar-brand" href="index.html">Bearsden Council</a>
       </div>
       <!-- page select/right/middle -->
       <ul class="nav navbar-nav">
         <li class=""><a href="../index.html">Home</a></li>
         <li class="dropdown active" />
-        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Councilors<b class="caret"></b></a>
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tourism<b class="caret"></b></a>
         <ul role="menu" class="dropdown-menu">
-          <li class="active"><a href="../councilors/ben.html">Ben Newlands</a></li>
-          <li class=""><a href="../councilors/kristen.html">Kristen McCallum</a></li>
+          <li><a href="../tourism/placesToStay.html">Places to Stay</a></li>
+          <li><a href="../tourism/placesOfInterest.html">Places of Interest</a></li>
+          <li><a href="../tourism/placesToEat.html">Places to Eat</a></li>
+        </ul>
+        <li class="dropdown" />
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Residential<b class="caret"></b></a>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="../residential/generalInfo.html">General information</a></li>
+          <li><a href="../residential/refugeRecycling">Refuge & Recycling</a></li>
         </ul>
         <li class=""><a href="../inyourarea.html">In Your Area</a></li>
-        <li class=""><a href="../schools.html">Schools</a></li>
         <li class=""><a href="../contact.html">Contact Us</a></li>
       </ul>
       <!-- search/right/bottom -->
@@ -73,23 +67,13 @@
     </div>
   </div>
 </nav>
-
 <div class="col-sm-1">
 
 </div>
 
 <div class="col-sm-10">
   <div class="well well-background">
-    <h1> Ben Newlands </h1>
-    <br />
-    <div class="img-responsive">
-      <img src="../images/ben.jpeg" alt="The one and only!!!" style="display: block; margin:auto;">
-    </div>
-    <br />
-    <h2 id="clickbutton"> Who is Ben? </h2><span class="glyphicon glyphicon-chevron-down glyphRight"></span>
-    <div id="Whois">
-      <p>Ben Newlands became a councilor in Bearsden Council in the 2017 election.</p>
-    </div>
+
   </div>
 </div>
 
@@ -105,8 +89,6 @@
     <a href="https://www.youtube.com/"><img src="../images/_0016_Youtube.png" width="26" height="26" alt="youtube"></a>
     <a href="https://www.rss.com/"><img src="../images/_0044_RSS.png" width="26" height="26" alt="rss feed"></a>
   </div>
-  <br />
-  <br />
 </div>
 </body>
 </html>

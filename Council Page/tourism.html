@@ -5,7 +5,7 @@
 
   <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
   <meta charset="utf-8">
-  <title>Bearsden Council - Councilors - Kristen McCallum</title>
+  <title>Bearsden Council - Tourism</title>
 
   <!-- add a viewport meta tag to enable touch zooming and ensure proper rendering on mobile devices -->
   <!-- sets the width of the page to be the same screen-width of the device being used -->
@@ -14,21 +14,9 @@
 
   <!-- includes to the minimised version of the Bootstrap CSS and js libraries -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/mainstyle.css">
-  <link rel="stylesheet" href="../css/navbar_white.css">
+  <link rel="stylesheet" href="css/mainstyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <script>
-
-  $(document).ready(function(){
-  $("#Whois").hide();
-      $("#clickbutton").click(function(){
-         $("#Whois").toggle("slow");
-      });
-    })
-
-  </script>
 
   <!-- a fix for old IE browser versions where there was little to no support for HTML5 elements and other HTML5 features  -->
   <!-- allows versions of Internet Explorer prior to version 9 to recognize the HTML5 tags and allows them to be styled using CSS -->
@@ -44,21 +32,26 @@
     <div class="navbar-inverse container-fluid">
       <!-- title/left/top -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="../index.html">Bearsden Council</a>
+        <a class="navbar-brand" href="index.html">Bearsden Council</a>
       </div>
       <!-- page select/right/middle -->
       <ul class="nav navbar-nav">
-        <li class=""><a href="../index.html">Home</a></li>
-        <li class="dropdown active" />
-        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Councilors<b class="caret"></b></a>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown" />
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tourism<b class="caret"></b></a>
         <ul role="menu" class="dropdown-menu">
-          <li class=""><a href="../councilors/ben.html">Ben Newlands</a></li>
-          <li class="active"><a href="../councilors/kristen.html">Kristen McCallum</a></li>
+          <li><a href="tourism/placesToStay.html">Places to Stay</a></li>
+          <li><a href="tourism/placesOfInterest.html">Places of Interest</a></li>
+          <li><a href="tourism/placeToEat.html">Places to Stay</a></li>
         </ul>
-        <li class=""><a href="../inyourarea.html">In Your Area</a></li>
-        <li class=""><a href="../schools.html">Schools</a></li>
-        <li class=""><a href="../contact.html">Contact Us</a></li>
-      </ul>
+        <li class="dropdown" />
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Residential<b class="caret"></b></a>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="residential/generalInfo.html">General information</a></li>
+          <li><a href="residential/refugeRecycling">Refuge & Recycling</a></li>
+        </ul>
+        <li class=""><a href="inyourarea.html">In Your Area</a></li>
+        <li class=""><a href="contact.html">Contact Us</a></li>
       <!-- search/right/bottom -->
       <form class="navbar-form pull-right">
         <div class="col-lg-12 col-xs">
@@ -79,14 +72,14 @@
 
 <div class="col-sm-10">
   <div class="well well-background">
-    <h1> Kristen McCallum </h1>
+    <h3> The West Highland Way </h3>
     <br />
-    Insert Photo!!
+    <img class="img-responsive" src="images/westWay.jpeg" alt="West Highland Way">
     <br />
-    <h2 id="clickbutton"> Who is Kristen? </h2>
-    <div id="Whois">
-      <p>Kristen McCallum became a councilor in Bearsden Council in the 2017 election.</p>
-    </div>
+    <br />
+    <p class="page-text"> In Bearsden the begining of the West Highland Way starts on it's 96 mile journey to Fort William.
+                          The scenery is beautifl and can be done in small managable sections or if you feel adventurous you
+                          could do the whole 96 miles. The fastest it has been completed is 14 hours, 14 minutes, 44 seconds.
   </div>
 </div>
 
@@ -96,11 +89,11 @@
 
 <div id="footer">
   <div class="navbar-header social-centre">
-    <a href="https://www.facebook.com"><img src="../images/_0048_Facebook.png" width="26" height="26" alt="face book"></a>
-    <a href="https://www.twitter.com/"><img src="../images/_0046_Twitter.png" width="26" height="26" alt="twitter"></a>
-    <a href="https://www.linkedin.com/"><img src="../images/_0018_Linkedin.png" width="26" height="26" alt="linkdn"></a>
-    <a href="https://www.youtube.com/"><img src="../images/_0016_Youtube.png" width="26" height="26" alt="youtube"></a>
-    <a href="https://www.rss.com/"><img src="../images/_0044_RSS.png" width="26" height="26" alt="rss feed"></a>
+    <a href="https://www.facebook.com"><img src="images/_0048_Facebook.png" width="26" height="26" alt="face book"></a>
+    <a href="https://www.twitter.com/"><img src="images/_0046_Twitter.png" width="26" height="26" alt="twitter"></a>
+    <a href="https://www.linkedin.com/"><img src="images/_0018_Linkedin.png" width="26" height="26" alt="linkdn"></a>
+    <a href="https://www.youtube.com/"><img src="images/_0016_Youtube.png" width="26" height="26" alt="youtube"></a>
+    <a href="https://www.rss.com/"><img src="images/_0044_RSS.png" width="26" height="26" alt="rss feed"></a>
   </div>
 </div>
 </body>
